@@ -15,6 +15,10 @@
 *::placeholder{
     font-family: 'Digital Numbers', sans-serif; 
 }
+*::selection {
+    background: red;
+    color: white;
+}
 body{
     background: #D1DDE5;
 }
@@ -155,7 +159,7 @@ body{
             font-weight: 400;
             font-size: 36px;
             line-height: 46px;
-            color: #F1F3F6;            
+            color:red;            
             outline: none;
             padding-right: 41px;
             text-align: right;
@@ -213,6 +217,9 @@ body{
                 }
                 &:active{
                     box-shadow:inset 5px 5px 10px #000000, 5px 5px 10px rgba(20, 21, 24, 0.1);
+                    p{
+                        color: red;
+                    }
                 }
                 p{
                     font-family: 'Orbitron';
@@ -245,6 +252,9 @@ body{
                 }
                 &:active{
                     box-shadow:inset 5px 5px 10px #000000, 5px 5px 10px rgba(20, 21, 24, 0.1);
+                    p{
+                        color: red;
+                    }
                 }
             }
         }
@@ -267,6 +277,9 @@ body{
                 &:active{
                     box-shadow:inset 5px 5px 10px #000000, -5px -5px 10px #141518;
                     border: 1px solid #000000;
+                    p{
+                        color: red;
+                    }
                 }
                 p{
                     font-family: 'Orbitron';
@@ -473,7 +486,7 @@ body{
                 justify-content: center;
                 align-items: center;
                 background: #F1F3F6;
-                box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
+                box-shadow: -5px -5px 10px #343333, 5px 5px 10px rgba(24, 23, 23, 0.1);
                 border-radius: 15px;
                 margin-bottom: 16px;
                 border: none;
@@ -481,7 +494,7 @@ body{
                     cursor: pointer;
                 }
                 &:active{
-                    box-shadow:inset -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
+                    box-shadow:inset -5px -5px 10px #343333, 5px 5px 10px rgba(24, 23, 23, 0.1);
                 }
                 p{
                     font-family: 'Orbitron';
@@ -497,7 +510,7 @@ body{
                 width: 160px;
                 height: 66px;
                 background: #F1F3F6;
-                box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
+                box-shadow: -5px -5px 10px #797878, 5px 5px 10px rgba(24, 23, 23, 0.1);
                 border-radius: 15px;
                 border: none;
                 p{
@@ -513,7 +526,7 @@ body{
                     cursor: pointer;
                 }
                 &:active{
-                    box-shadow:inset -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
+                    box-shadow:inset -5px -5px 10px #343333, 5px 5px 10px rgba(24, 23, 23, 0.1);
                 }
             }
         }
@@ -529,14 +542,14 @@ body{
                 justify-content: center;
                 align-items: center;
                 background: #F1F3F6;
-                box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
+                box-shadow:  -5px -5px 10px #343333, 5px 5px 10px rgba(24, 23, 23, 0.1);
                 border-radius: 15px;
                 border: 1px solid #1565C0;
                 border-radius: 15px;
                 margin-bottom: 16px;
                 &:active{
-                    box-shadow:inset -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
-                    border: 1px solid #F1F3F6;
+                    box-shadow:inset  -5px -5px 10px #343333, 5px 5px 10px rgba(24, 23, 23, 0.1);
+                    //border: 1px solid #F1F3F6;
                 }
                 p{
                     font-family: 'Orbitron';

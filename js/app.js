@@ -52,67 +52,100 @@ const equalEl=document.getElementById("equal")
 const dotEl=document.getElementById("dot")
 const screenEl = document.getElementById("input")
 
+const musicEl=document.getElementById("music");
+const plusMusicEl=document.getElementById("plusMusic");
+const equalMusicEl=document.getElementById("equalMusic");
+const deletMusicEl=document.getElementById("deletMusic");
+
 
 zeroEl.addEventListener("click",()=>{
-    screenEl.value+='0' 
+    musicEl.loop = false
+    musicEl.play();
+    screenEl.value+='0';
 })
 oneEl.addEventListener("click",()=>{
+    musicEl.loop = false
+    musicEl.play();
     screenEl.value+='1' 
 })
 twoEl.addEventListener("click",()=>{
+    musicEl.loop = false
+    musicEl.play();
     screenEl.value+='2' 
 })
 threeEl.addEventListener("click",()=>{
+    musicEl.loop = false
+    musicEl.play();
     screenEl.value+='3' 
 })
 fourEl.addEventListener("click",()=>{
+    musicEl.loop = false
+    musicEl.play();
     screenEl.value+='4' 
 })
 fiveEl.addEventListener("click",()=>{
+    musicEl.loop = false
+    musicEl.play();
     screenEl.value+='5' 
 })
 sixEl.addEventListener("click",()=>{
+    musicEl.loop = false
+    musicEl.play();
     screenEl.value+='6' 
 })
 sevenEl.addEventListener("click",()=>{
+    musicEl.loop = false
+    musicEl.play();
     screenEl.value+='7' 
 })
 eightEl.addEventListener("click",()=>{
+    musicEl.loop = false
+    musicEl.play();
     screenEl.value+='8' 
 })
 nineEl.addEventListener("click",()=>{
+    musicEl.loop = false
+    musicEl.play();
     screenEl.value+='9' 
 })
 
 
 dropEl.addEventListener("click",()=>{
+    plusMusicEl.loop = false
+    plusMusicEl.play();
     screenEl.value+="/" 
 })
 increaseEl.addEventListener("click",()=>{
+    plusMusicEl.loop = false
+    plusMusicEl.play();
     screenEl.value+='*' 
 })
 minusEl.addEventListener("click",()=>{
+    plusMusicEl.loop = false
+    plusMusicEl.play();
     screenEl.value+='-' 
     
 })
 plusEl.addEventListener("click",()=>{
+    plusMusicEl.loop = false
+    plusMusicEl.play();
     screenEl.value+="+" 
 })
 dotEl.addEventListener("click",()=>{
+    plusMusicEl.loop = false
+    plusMusicEl.play();
     screenEl.value+="." 
 })
 equalEl.addEventListener("click",()=>{
-    screenEl.value=eval(screenEl.value) 
-})
-
-equalEl.addEventListener("keypress",(event)=>{
-    if(event.key === "13") {
-        prompt("salom")
-    }
+    equalMusicEl.loop = false
+    equalMusicEl.play();
+    screenEl.value=Math.floor(eval(screenEl.value) )
 })
 
 
 clearEl.addEventListener("click" ,()=>{
+    deletMusicEl.loop = false
+    deletMusicEl.play();
     screenEl.value = ""
 })
 
