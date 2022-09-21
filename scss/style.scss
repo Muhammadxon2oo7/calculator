@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap');
+@font-face {
+    font-family: 'Digital Numbers';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Digital Numbers'), url('https://fonts.cdnfonts.com/s/15953/DigitalNumbers-Regular.woff') format('woff');
+}
+
 *{
     margin: 0;
     padding: 0;
