@@ -1,0 +1,835 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Digital Numbers", sans-serif;
+}
+
+*::-webkit-input-placeholder {
+  font-family: "Digital Numbers", sans-serif;
+}
+
+*::-moz-placeholder {
+  font-family: "Digital Numbers", sans-serif;
+}
+
+*:-ms-input-placeholder {
+  font-family: "Digital Numbers", sans-serif;
+}
+
+*::-ms-input-placeholder {
+  font-family: "Digital Numbers", sans-serif;
+}
+
+*::placeholder {
+  font-family: "Digital Numbers", sans-serif;
+}
+
+body {
+  background: #D1DDE5;
+}
+
+.calculyator {
+  margin: 0 auto;
+  width: 375px;
+  height: 667px;
+  margin-top: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1A1B1F), to(#17181C));
+  background: -o-linear-gradient(top, #1A1B1F 0%, #17181C 100%);
+  background: linear-gradient(180deg, #1A1B1F 0%, #17181C 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 66px;
+  position: relative;
+}
+.calculyator .user_name {
+  margin-top: 15px;
+  display: block;
+  width: 300px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.calculyator .user_name p {
+  color: #1565C0;
+  font-family: "Rubik Maze", cursive;
+  font-size: 35px;
+  -webkit-animation: userName infinite 40s;
+          animation: userName infinite 40s;
+}
+@-webkit-keyframes userName {
+  0% {
+    color: red;
+  }
+  10% {
+    color: purple;
+  }
+  15% {
+    color: dodgerblue;
+  }
+  20% {
+    color: darkorchid;
+  }
+  25% {
+    color: darkorange;
+  }
+  30% {
+    color: violet;
+  }
+  35% {
+    color: greenyellow;
+  }
+  40% {
+    color: #1565C0;
+  }
+  45% {
+    color: orange;
+  }
+  50% {
+    color: orangered;
+  }
+  55% {
+    color: blueviolet;
+  }
+  60% {
+    color: blue;
+  }
+  65% {
+    color: #D1DDE5;
+  }
+  70% {
+    color: yellow;
+  }
+  75% {
+    color: brown;
+  }
+  80% {
+    color: chartreuse;
+  }
+  85% {
+    color: tomato;
+  }
+  90% {
+    color: springgreen;
+  }
+  95% {
+    color: peru;
+  }
+  100% {
+    color: rgb(101, 243, 193);
+  }
+}
+@keyframes userName {
+  0% {
+    color: red;
+  }
+  10% {
+    color: purple;
+  }
+  15% {
+    color: dodgerblue;
+  }
+  20% {
+    color: darkorchid;
+  }
+  25% {
+    color: darkorange;
+  }
+  30% {
+    color: violet;
+  }
+  35% {
+    color: greenyellow;
+  }
+  40% {
+    color: #1565C0;
+  }
+  45% {
+    color: orange;
+  }
+  50% {
+    color: orangered;
+  }
+  55% {
+    color: blueviolet;
+  }
+  60% {
+    color: blue;
+  }
+  65% {
+    color: #D1DDE5;
+  }
+  70% {
+    color: yellow;
+  }
+  75% {
+    color: brown;
+  }
+  80% {
+    color: chartreuse;
+  }
+  85% {
+    color: tomato;
+  }
+  90% {
+    color: springgreen;
+  }
+  95% {
+    color: peru;
+  }
+  100% {
+    color: rgb(101, 243, 193);
+  }
+}
+.calculyator .dark_mode {
+  position: absolute;
+  right: 20px;
+  top: 24px;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #141518;
+  -webkit-box-shadow: 5px 5px 10px #000000, -5px -5px 10px rgba(20, 21, 24, 0.4);
+          box-shadow: 5px 5px 10px #000000, -5px -5px 10px rgba(20, 21, 24, 0.4);
+  border-radius: 50%;
+}
+.calculyator .dark_mode:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transform: rotate(5.142rad);
+      -ms-transform: rotate(5.142rad);
+          transform: rotate(5.142rad);
+}
+.calculyator .dark_mode img:last-child {
+  display: none;
+}
+.calculyator .input__wrapper {
+  width: 335px;
+  height: 116px;
+  background: #141518;
+  -webkit-box-shadow: 5px 5px 10px #000000, -5px -5px 10px rgba(20, 21, 24, 0.1);
+          box-shadow: 5px 5px 10px #000000, -5px -5px 10px rgba(20, 21, 24, 0.1);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 67px;
+}
+.calculyator .input__wrapper input {
+  width: 313px;
+  height: 102px;
+  background: #202226;
+  border: 2px solid #1565C0;
+  border-radius: 10px;
+  font-family: "Digital Numbers";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  color: #F1F3F6;
+  outline: none;
+  padding-right: 41px;
+  text-align: right;
+}
+.calculyator .input__wrapper input::-webkit-outer-spin-button, .calculyator .input__wrapper input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.calculyator .input__wrapper input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
+}
+.calculyator .input__wrapper input::-webkit-input-placeholder {
+  height: 46px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  color: #F1F3F6;
+  opacity: 0.2;
+  text-align: right;
+}
+.calculyator .input__wrapper input::-moz-placeholder {
+  height: 46px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  color: #F1F3F6;
+  opacity: 0.2;
+  text-align: right;
+}
+.calculyator .input__wrapper input:-ms-input-placeholder {
+  height: 46px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  color: #F1F3F6;
+  opacity: 0.2;
+  text-align: right;
+}
+.calculyator .input__wrapper input::-ms-input-placeholder {
+  height: 46px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  color: #F1F3F6;
+  opacity: 0.2;
+  text-align: right;
+}
+.calculyator .input__wrapper input::placeholder {
+  height: 46px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  color: #F1F3F6;
+  opacity: 0.2;
+  text-align: right;
+}
+.calculyator .input__wrapper input:-moz-placeholder-shown {
+  color: red;
+}
+.calculyator .input__wrapper input:-ms-input-placeholder {
+  color: red;
+}
+.calculyator .input__wrapper input:placeholder-shown {
+  color: red;
+}
+.calculyator .keys__wrapper {
+  width: 335px;
+  height: 394px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.calculyator .keys__wrapper .left {
+  width: 247px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: 16px;
+}
+.calculyator .keys__wrapper .left .keys {
+  width: 72px;
+  height: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #141518;
+  -webkit-box-shadow: 5px 5px 10px #000000, 5px 5px 10px rgba(20, 21, 24, 0.1);
+          box-shadow: 5px 5px 10px #000000, 5px 5px 10px rgba(20, 21, 24, 0.1);
+  border-radius: 15px;
+  margin-bottom: 16px;
+  border: none;
+}
+.calculyator .keys__wrapper .left .keys:hover {
+  cursor: pointer;
+}
+.calculyator .keys__wrapper .left .keys:active {
+  -webkit-box-shadow: inset 5px 5px 10px #000000, 5px 5px 10px rgba(20, 21, 24, 0.1);
+          box-shadow: inset 5px 5px 10px #000000, 5px 5px 10px rgba(20, 21, 24, 0.1);
+}
+.calculyator .keys__wrapper .left .keys p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #F1F3F6;
+}
+.calculyator .keys__wrapper .left .zero {
+  width: 160px;
+  height: 66px;
+  background: #141518;
+  -webkit-box-shadow: 5px 5px 10px #000000, -5px -5px 10px #141518;
+          box-shadow: 5px 5px 10px #000000, -5px -5px 10px #141518;
+  border-radius: 15px;
+  border: none;
+}
+.calculyator .keys__wrapper .left .zero p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #F1F3F6;
+}
+.calculyator .keys__wrapper .left .zero:hover {
+  cursor: pointer;
+}
+.calculyator .keys__wrapper .left .zero:active {
+  -webkit-box-shadow: inset 5px 5px 10px #000000, 5px 5px 10px rgba(20, 21, 24, 0.1);
+          box-shadow: inset 5px 5px 10px #000000, 5px 5px 10px rgba(20, 21, 24, 0.1);
+}
+.calculyator .keys__wrapper .right {
+  width: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.calculyator .keys__wrapper .right .R_keys {
+  width: 72px;
+  height: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #141518;
+  -webkit-box-shadow: 5px 5px 10px #000000, -5px -5px 10px #141518;
+          box-shadow: 5px 5px 10px #000000, -5px -5px 10px #141518;
+  border: 1px solid #1565C0;
+  border-radius: 15px;
+  margin-bottom: 16px;
+}
+.calculyator .keys__wrapper .right .R_keys:active {
+  -webkit-box-shadow: inset 5px 5px 10px #000000, -5px -5px 10px #141518;
+          box-shadow: inset 5px 5px 10px #000000, -5px -5px 10px #141518;
+  border: 1px solid #000000;
+}
+.calculyator .keys__wrapper .right .R_keys p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #1565C0;
+}
+.calculyator .keys__wrapper .right .blue {
+  background-color: #1565C0;
+}
+.calculyator .keys__wrapper .right .blue p {
+  color: #F1F3F6;
+}
+
+.calculyatorLight {
+  margin: 0 auto;
+  width: 375px;
+  height: 667px;
+  margin-top: 20px;
+  background-color: #F1F3F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 66px;
+  position: relative;
+}
+.calculyatorLight .user_name {
+  margin-top: 15px;
+  display: block;
+  width: 300px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.calculyatorLight .user_name p {
+  color: #1565C0;
+  font-family: "Rubik Maze", cursive;
+  font-size: 35px;
+  -webkit-animation: userName infinite 40s;
+          animation: userName infinite 40s;
+}
+@keyframes userName {
+  0% {
+    color: red;
+  }
+  10% {
+    color: purple;
+  }
+  15% {
+    color: dodgerblue;
+  }
+  20% {
+    color: darkorchid;
+  }
+  25% {
+    color: darkorange;
+  }
+  30% {
+    color: violet;
+  }
+  35% {
+    color: greenyellow;
+  }
+  40% {
+    color: #1565C0;
+  }
+  45% {
+    color: orange;
+  }
+  50% {
+    color: orangered;
+  }
+  55% {
+    color: blueviolet;
+  }
+  60% {
+    color: blue;
+  }
+  65% {
+    color: #D1DDE5;
+  }
+  70% {
+    color: yellow;
+  }
+  75% {
+    color: brown;
+  }
+  80% {
+    color: chartreuse;
+  }
+  85% {
+    color: tomato;
+  }
+  90% {
+    color: springgreen;
+  }
+  95% {
+    color: peru;
+  }
+  100% {
+    color: rgb(101, 243, 193);
+  }
+}
+.calculyatorLight .dark_mode {
+  position: absolute;
+  right: 20px;
+  top: 24px;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F1F3F6;
+  -webkit-box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.4);
+          box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.4);
+  border-radius: 50%;
+}
+.calculyatorLight .dark_mode:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transform: rotate(5.142rad);
+      -ms-transform: rotate(5.142rad);
+          transform: rotate(5.142rad);
+}
+.calculyatorLight .dark_mode img:first-child {
+  display: none;
+}
+.calculyatorLight .input__wrapper {
+  width: 335px;
+  height: 116px;
+  background: #F1F3F6;
+  -webkit-box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
+          box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 67px;
+}
+.calculyatorLight .input__wrapper input {
+  width: 313px;
+  height: 102px;
+  background: #F1F3F6;
+  border: 2px solid #1565C0;
+  border-radius: 10px;
+  font-family: "Digital Numbers";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  color: #000000;
+  outline: none;
+  padding-right: 41px;
+  text-align: right;
+}
+.calculyatorLight .input__wrapper input::-webkit-outer-spin-button, .calculyatorLight .input__wrapper input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.calculyatorLight .input__wrapper input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
+}
+.calculyatorLight .input__wrapper input::-webkit-input-placeholder {
+  height: 46px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  color: #000000;
+  opacity: 0.2;
+  text-align: right;
+}
+.calculyatorLight .input__wrapper input::-moz-placeholder {
+  height: 46px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  color: #000000;
+  opacity: 0.2;
+  text-align: right;
+}
+.calculyatorLight .input__wrapper input:-ms-input-placeholder {
+  height: 46px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  color: #000000;
+  opacity: 0.2;
+  text-align: right;
+}
+.calculyatorLight .input__wrapper input::-ms-input-placeholder {
+  height: 46px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  color: #000000;
+  opacity: 0.2;
+  text-align: right;
+}
+.calculyatorLight .input__wrapper input::placeholder {
+  height: 46px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  color: #000000;
+  opacity: 0.2;
+  text-align: right;
+}
+.calculyatorLight .input__wrapper input:-moz-placeholder-shown {
+  color: red;
+}
+.calculyatorLight .input__wrapper input:-ms-input-placeholder {
+  color: red;
+}
+.calculyatorLight .input__wrapper input:placeholder-shown {
+  color: red;
+}
+.calculyatorLight .keys__wrapper {
+  width: 335px;
+  height: 394px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.calculyatorLight .keys__wrapper .left {
+  width: 247px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: 16px;
+}
+.calculyatorLight .keys__wrapper .left .keys {
+  width: 72px;
+  height: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F1F3F6;
+  -webkit-box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
+          box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
+  border-radius: 15px;
+  margin-bottom: 16px;
+  border: none;
+}
+.calculyatorLight .keys__wrapper .left .keys:hover {
+  cursor: pointer;
+}
+.calculyatorLight .keys__wrapper .left .keys:active {
+  -webkit-box-shadow: inset -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
+          box-shadow: inset -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
+}
+.calculyatorLight .keys__wrapper .left .keys p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #333632;
+}
+.calculyatorLight .keys__wrapper .left .zero {
+  width: 160px;
+  height: 66px;
+  background: #F1F3F6;
+  -webkit-box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
+          box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
+  border-radius: 15px;
+  border: none;
+}
+.calculyatorLight .keys__wrapper .left .zero p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #333632;
+}
+.calculyatorLight .keys__wrapper .left .zero:hover {
+  cursor: pointer;
+}
+.calculyatorLight .keys__wrapper .left .zero:active {
+  -webkit-box-shadow: inset -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
+          box-shadow: inset -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
+}
+.calculyatorLight .keys__wrapper .right {
+  width: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.calculyatorLight .keys__wrapper .right .R_keys {
+  width: 72px;
+  height: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F1F3F6;
+  -webkit-box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
+          box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
+  border-radius: 15px;
+  border: 1px solid #1565C0;
+  border-radius: 15px;
+  margin-bottom: 16px;
+}
+.calculyatorLight .keys__wrapper .right .R_keys:active {
+  -webkit-box-shadow: inset -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
+          box-shadow: inset -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.1);
+  border: 1px solid #F1F3F6;
+}
+.calculyatorLight .keys__wrapper .right .R_keys p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #1565C0;
+}
+.calculyatorLight .keys__wrapper .right .blue {
+  background-color: #1565C0;
+}
+.calculyatorLight .keys__wrapper .right .blue p {
+  color: #F1F3F6;
+}
